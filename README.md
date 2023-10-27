@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -10,4 +9,3 @@ Currently, two official plugins are available:
 =======
 # GeyonTech
 This is Official Website For GeyonTech
->>>>>>> 48de98ad4861a3175766a986c4589da30b13053a
