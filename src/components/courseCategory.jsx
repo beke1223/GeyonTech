@@ -109,7 +109,7 @@ const CourseCategory = () => {
           );
         })}
       </div>
-      <Link to={"./pages/courseCategory-seeMore"}>
+      <Link to={"../pages/courseCategory-seeMore"}>
         <button className="bg-red-500 text-white py-4 px-8">
           Browse Course
         </button>

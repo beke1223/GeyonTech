@@ -1,18 +1,19 @@
-
-import Description from './components/Description'
-import Ourtrainer from './components/Ourtrainer'
-import CourseCategory from './components/courseCategory'
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import CourseCategorySeeMore from "./pages/courseCategory-seeMore.jsx";
+import Body from "./pages/body";
 
 function App() {
-  
-
   return (
-    <>
-      <Description/>
-      <CourseCategory/>
-      <Ourtrainer/>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path={"/"} element={<Body/>}/>
+        <Route
+          path={"/pages/courseCategory-seeMore"}
+          element={<CourseCategorySeeMore />}
+        />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
