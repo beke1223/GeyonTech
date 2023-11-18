@@ -11,7 +11,7 @@ const Ourtrainer = () => {
            </div>
            <div className="ellipse">
                 <div className="circle"></div>
-                <div className='h-64 w-60 bg-slate-500 rounded-full' data-aos="flip-left"  data-aos-delay="2000" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></div>
+                <div className='h-28 w-28 bg-slate-500 rounded-full' data-aos="flip-left"  data-aos-delay="2000" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></div>
            </div> 
            <div className="relative bottom-[360px] left-24">
                 <TrainerImage/>
