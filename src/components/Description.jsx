@@ -34,9 +34,7 @@ const Description = () => {
         transition={{ duration: 1, delay: 0.5 }}
         className="bg-white p-4 rounded shadow-lg max-w-sm mx-2"
       >
-        <motion.h1
-          className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-center md:text-start text-indigo-800"
-        >
+        <motion.h1 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-center md:text-start text-indigo-800">
           Welcome to Geyon Technology
         </motion.h1>
         <motion.p
@@ -67,7 +65,9 @@ const Description = () => {
         className="text-center md:text-left"
       >
         {slogan && (
-          <motion.p className="text-base md:text-3xl font-bold text-white">{slogan}</motion.p>
+          <motion.p className="text-base md:text-3xl font-bold text-white">
+            {slogan}
+          </motion.p>
         )}
       </motion.div>
     </motion.div>
