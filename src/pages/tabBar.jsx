@@ -3,15 +3,15 @@ import React from 'react';
 
 const TabBar = () => {
   return (
-    <div className="bg-gray-800 p-4">
+    <div className="bg-white-800 p-4">
       <div className="flex items-center justify-between">
-        <div className="text-white font-bold text-lg">Geyon</div>
+        <div className="text-black font-bold text-lg">Geyon</div>
         <div className="flex space-x-4">
           <TabItem label="Learn" dropdownOptions={['Option 1', 'Option 2']} />
           <TabItem label="Catalog" />
           <TabItem label="Business" />
           <TabItem label="Government" />
-          <button className="text-white font-bold text-lg bg-green">Log In </button>
+          <button className="text-white font-bold text-lg bg-red">Log In </button>
           <TabItem label="Log In" />
           <TabItem label="Join for Free" />
         </div>
@@ -23,7 +23,7 @@ const TabBar = () => {
 const TabItem = ({ label, dropdownOptions }) => {
   return (
     <div className="relative group">
-      <button className="text-white focus:outline-bold">
+      <button className="text-white focus:outline-bold ">
         {label}
       </button>
       {dropdownOptions && (
