@@ -70,7 +70,7 @@ const CourseCategory = () => {
       <h1 className="text-3xl font-semibold w-full flex justify-center py-5">
         Start Learning
       </h1>
-      <div className="grid grid-cols-3 space-y-4 space-x-4  mx-56">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-4 space-x-4  md:mx-56">
         {courseCatList.map((course, i) => {
           return (
             <a

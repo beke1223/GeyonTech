@@ -102,20 +102,20 @@ const CourseCategorySeeMore = () => {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center gap-5 col-span-2">
+      <div className=" mx-5 flex flex-col justify-center items-center gap-5 col-span-2">
         <h1 className="text-3xl font-semibold w-full flex justify-center py-5">
           Online & On Campus Courses Catalog
         </h1>
 
-        <h3 className="flex justify-center -mb-5 -ml-64 text-lg">
+        <h3 className="flex justify-center -mb-5 md:-ml-64 text-lg">
           {courseCatList.length} programs found Online
         </h3>
 
-        <div className="w-[60rem] ml-[30rem] flex justify-end items-end  border-black border-2"></div>
+        <div className="w-[60rem] lg:ml-[30rem] flex justify-end items-end  border-black border-2"></div>
       </div>
 
-      <div className="flex justify-center">
-        <div className="col-span-1 flex flex-col gap-10 fixed left-80">
+      <div className="md:flex  justify-center">
+        <div className="col-span-1  flex flex-col gap-10 xl:absolute mx-5 xl:left-80">
           <div>
             <label htmlFor="topic" className="flex flex-col">
               Topics
@@ -230,7 +230,7 @@ const CourseCategorySeeMore = () => {
             <h3 className="font-semibold"> Browse here </h3>
           </div>
         </div>
-        <div className="space-y-4 flex flex-col ml-[30rem] w-1/2">
+        <div className="space-y-4 flex flex-col xl:ml-[30rem] lg:w-1/2 mx-5 ">
           {courseCatList.map((course, i) => {
             return (
               <a
@@ -239,7 +239,7 @@ const CourseCategorySeeMore = () => {
                 className={`${i == 0 ? "mt-3" : ""}`}
               >
                 <div
-                  className="grid grid-cols-3 items-center shadow-lg text-center border p-5"
+                  className="lg:grid lg:grid-cols-3 items-center shadow-lg text-center border p-5"
                   onMouseEnter={() => {
                     setMoveArrow(true);
                     setArrowId(i);
@@ -257,7 +257,7 @@ const CourseCategorySeeMore = () => {
                     <div className="flex items-start flex-col gap-4">
                       <h3>Data</h3>
                       <h1
-                        className={`text-xl font-semibold transition-all duration-300 p-2 ${
+                        className={`sm:text-xl font-semibold transition-all duration-300 sm:p-2 ${
                           moveArrow && i == arrowId
                             ? "bg-yellow-300  translate-x-2"
                             : ""
