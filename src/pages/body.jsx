@@ -6,12 +6,12 @@ import Ourtrainer from "../components/Ourtrainer";
 import TabBar  from "./tabBar";
 function Body() {
   return (
-    <>
+    <div className="w-full h-screen">
       <TabBar/>
       <Description />
       <CourseCategory />
       <Ourtrainer />
-    </>
+    </div>
   );
 }
 
