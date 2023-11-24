@@ -1,6 +1,7 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import CourseCategorySeeMore from "./pages/courseCategory-seeMore.jsx";
 import Body from "./pages/body";
+import AboutUs from "./components/AboutUs.jsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           path={"/pages/courseCategory-seeMore"}
           element={<CourseCategorySeeMore />}
         />
+        <Route path="/about-us" element={<AboutUs/>}/>
       </Routes>
     </BrowserRouter>
   );
