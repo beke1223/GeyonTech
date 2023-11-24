@@ -6,7 +6,7 @@ const TabBar = () => {
   let Links = [
     { name: "Home", link: "/" },
     { name: "Service", link: "/" },
-    { name: "About", link: "/" },
+    { name: "About", link: "/about-us" },
     { name: "Blog's", link: "/" },
     { name: "About", link: "/" },
   ];
@@ -39,7 +39,7 @@ const TabBar = () => {
           {Links.map((link) => (
             <li className="md:ml-8 md:my-0 my-7  text-xl" key={link.name}>
               <a
-                className="text-gray-800 hover: text-gray-400 duration-500"
+                className="hover: text-gray-400 duration-500"
                 href={link.link}
               >
                 {link.name}
